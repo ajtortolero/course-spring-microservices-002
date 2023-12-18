@@ -23,7 +23,7 @@ public class MovieController {
     private final MovieService movieService;
     @GetMapping("")
     @Operation(
-            summary = "Get all users",
+            summary = "Get all movies",
             description = "Allows you to obtain the list of all movies"
     )
     @ApiResponses(value = {
