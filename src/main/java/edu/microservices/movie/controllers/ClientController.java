@@ -28,7 +28,7 @@ public class ClientController {
     @ApiResponses(value = {
             @ApiResponse(
                     responseCode = "200",
-                    description = "Movies created in the system",
+                    description = "Clients created in the system",
                     content = @Content(schema = @Schema(implementation = Client.class)))
     })
     public Flux<Client> getAllClients(){
