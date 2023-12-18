@@ -30,7 +30,7 @@ public class MovieController {
             @ApiResponse(
                     responseCode = "200",
                     description = "Movies created in the system",
-                    content = @Content(schema = @Schema(implementation = Client.class)))
+                    content = @Content(schema = @Schema(implementation = Movie.class)))
     })
     public Flux<Movie> getAllMovies(){
         return movieService.findAll();
