@@ -1,4 +1,4 @@
-package com.microservices.movie.msmovie.models;
+package edu.microservices.movie.models;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -12,7 +12,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-@Entity
+@Entity(name = "client")
 @Table(name = "client")
 @AllArgsConstructor
 @NoArgsConstructor

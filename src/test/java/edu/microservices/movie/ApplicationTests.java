@@ -1,4 +1,4 @@
-package com.microservices.movie.msmovie;
+package edu.microservices.movie;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

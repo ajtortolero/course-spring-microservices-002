@@ -1,4 +1,4 @@
-package com.microservices.movie.msmovie.models;
+package edu.microservices.movie.models;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -15,15 +15,15 @@ import lombok.Setter;
 
 @Setter
 @Getter
-@Entity
-@Table(name = "movies")
+@Entity(name = "movie")
+@Table(name = "movie")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Schema(description = "Unique ID of the movie", example = "1")
-    private Long id;
+    private String id;
     @Schema(description = "Title of the movie", example = "Inception")
     private String title;
     @Schema(description = "Director of the movie", example = "Christopher Nolan")
