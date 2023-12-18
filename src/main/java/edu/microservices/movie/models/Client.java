@@ -3,7 +3,8 @@ package edu.microservices.movie.models;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,7 +18,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Client {
-    @jakarta.persistence.Id
+    @Id
     @Schema(description = "Unique ID of the user, usually a typed ID", example = "14463182")
     protected String id;
     @Schema(description = "User name", example = "Alejandro")

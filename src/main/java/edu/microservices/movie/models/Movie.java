@@ -3,10 +3,8 @@ package edu.microservices.movie.models;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+//import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,8 +18,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Movie {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Id
+    @jakarta.persistence.Id
     @Schema(description = "Unique ID of the movie", example = "1")
     private String id;
     @Schema(description = "Title of the movie", example = "Inception")
